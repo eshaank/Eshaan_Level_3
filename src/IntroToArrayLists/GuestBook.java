@@ -1,6 +1,11 @@
 package IntroToArrayLists;
 
+import java.util.ArrayList;
+
 public class GuestBook {
+	ArrayList<String> names = new ArrayList<String>();
+	
+JFrame frame = new JFrame
 	// Create a GUI with two buttons. One button reads "Add Name" and the other button reads "View Names". 
 	// When the add name button is clicked, display an input dialog that asks the user to enter a name. Add
 	// that name to an ArrayList. When the "View Names" button is clicked, display a message dialog that displays
