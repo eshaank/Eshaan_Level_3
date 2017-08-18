@@ -49,6 +49,7 @@ public class TextUndoRedo implements KeyListener {
 
 		frame.pack();
 		frame.setSize(2000, 50);
+		
 	}
 
 	@Override
@@ -62,11 +63,14 @@ public class TextUndoRedo implements KeyListener {
 		// TODO Auto-generated method stub
 		if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE && !words.isEmpty()) {
 			gone = words.pop();
+		delete.push(gone);
 			
 		}
-		else if (e.getKeyCode() == KeyEvent.VK_1 && !words.isEmpty()) {
-
-			label.setText(gone);
+		else if (e.getKeyCode() == KeyEvent.VK_1 && !delete.isEmpty()) {
+	
+			words.push(delete.pop());
+			
+			
 			
 
 		} else {
