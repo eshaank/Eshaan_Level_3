@@ -97,4 +97,44 @@ public class Algorithms {
 		return results;
 
 	}
-}
+	public static List<String> sortDNA(List<String> unsortedSequences) {
+		
+		for (int i = 0; i < unsortedSequences.size(); i++) {
+			for (int j = i + 1; j < unsortedSequences.size(); j++) {
+				String s1 = unsortedSequences.get(j);
+			String s2	= unsortedSequences.get(i);
+				if (s1.length() < s2.length()) {
+					String temp = unsortedSequences.get(i);
+					unsortedSequences.set(i, unsortedSequences.get(j));
+					unsortedSequences.set(j, temp);
+					System.out.println(unsortedSequences);
+				}
+
+			}
+
+		}
+		return unsortedSequences;
+		
+	}
+	
+	public static List<String> sortWords(List<String> words){
+//		for (int i = 0; i < words.size(); i++) {
+//			for (int j = i + 1; j < words.size(); j++) {
+//				String s1 = words.get(j);
+//			String s2	= words.get(i);
+//				if (s1.length() < s2.length()) {
+//					String temp = words.get(i);
+//					//words.set(i, words.get(j));
+//					words.set(j, temp);
+//					System.out.println(words);
+//				}
+//
+//			}
+//
+//		}
+		
+		
+		return words;
+		
+	}
+} 
